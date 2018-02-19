@@ -1,0 +1,540 @@
+/* CSS RESET SECTION
+------------------------------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0b2 | 201101 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, 
+ruby, section, summary, time, mark,
+audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+img{vertical-align: top;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, menu, nav,
+section, canvas, main, video { display: block; }
+body { line-height: 1; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+html, body {width:100%; height: 100%;}
+
+@font-face {
+    font-family: 'abugetregular';
+    src: url('fonts/abuget-webfont.woff2') format('woff2'),
+         url('fonts/abuget-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------HOMEPAGE STYLESHEET----------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------*/
+body .bgImage {
+    overflow-x: hidden;
+}
+
+.bgImage {
+    background-image: url(../imgs/tools.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 935px;
+    margin-top: -120px;
+}
+
+/*-------------------------------HOMEPAGE HEAD SECTION----------------------------------*/
+
+.firstFramme {
+    background-color: #7886A1;
+    width: 100%;
+    height: 90px;
+    padding-top: 120px;   
+}
+
+.contentFramme {
+    width: 55%;
+    margin-left: 47%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topLogo {
+    width: 130px;
+    align-self: center;
+    justify-content: flex-end; 
+}
+
+.insta{
+    width: 200px;
+    height: 60px;
+    font-family: abugetregular;
+    font-size: 3em;
+    color: white;
+    align-self: center;
+    margin-top: 15px;
+}
+
+.insta:link {
+    text-decoration: none;
+}
+
+.insta:hover {
+     color: #f4d785;
+}
+
+.insta:active {
+    color: white;
+}
+
+.menu {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 20;
+}
+
+.menu ul{
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+}
+
+.menu ul a {
+    font-size: 2rem;
+    color: #6E7189;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: monospace;
+    padding: 5px 10px 5px 10px;
+    display: block;
+}
+
+.menu li {
+    border-right: 1px #6E7189 solid;
+}
+
+.menu li:last-child {
+    border-right: none; 
+}
+
+
+.menu a:link{
+    text-decoration: none;
+}
+
+.menu a:visited {
+    color: darkgrey;
+}
+
+.menu a:hover {
+    font-weight: bold;
+}
+
+.menu a:active {
+    color: white;
+}
+
+/*---------------------------HOMEPAGE MAIN SECTION-------------------------------*/
+
+
+.homeButton {
+    position: sticky;
+    top: 150px;
+    margin-top: 300px;
+    float: right;
+    display: block;
+    background-color: dimgrey;
+    width: 100px;
+    font-family: abugetregular;
+    color: white;
+    font-size: 3em;
+    text-align:center;
+    padding: 5px 25px 5px 25px;
+    border-radius: 5px 0px 0px 5px;
+    z-index: 10;   
+}
+
+.homeButton:link{
+    text-decoration: none;
+}
+
+.homeButton:hover {
+    color: lightgrey;
+}
+
+.homeButton:active {
+    color: white;
+}    
+
+.pageContent {
+    width: 100%;
+    height: 885px;
+}
+
+.pageContent h3 {
+    text-align: center;
+    font-size: 9em;
+    padding-top: 90px;
+    font-family: abugetregular;
+    color: white;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row1 {
+    width: 70%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 80px;
+    line-height: 1.5;
+    color: dimgrey;
+    font-family: Verdana, sans-serif;
+    text-align: justify;
+    justify-content: space-between;
+}
+
+.photo {
+    width: 40%;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 12px;
+}
+
+.column1 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pageContent p {
+    margin-left: 20px;
+}
+
+.pageContent p::first-letter { 
+    font-size: 150%;
+}
+
+.nav {
+    margin-top: 30px;
+    margin-left: 20px;
+    list-style: none;
+}
+
+.nav a {
+    font-family: "Gill Sans";
+    line-height: 1.5;
+    font-size: 20px;
+    color: dimgrey;
+}
+
+.nav a:link{
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: white;
+}
+
+.nav a:active {
+    color: lightgrey;
+}
+
+#vegetarian { 
+    background-color: #D8E3A0;
+}
+
+#meat {
+    background-color: #E7D7CE;
+}
+
+#fish {
+    background-color: #CFE0ED;
+}
+
+#seafood {
+    background-color: #DBD8D7;
+}
+
+#breakfast {
+    background-color: #E8BC48;
+}
+
+#dessert {
+    background-color: #EFB57C;
+}
+
+/*--------------------------------HOMEPAGE INSTAGRAM US---------------------------------------*/
+
+#instaPage {
+    width: 100%;
+    height: 865px;
+    background-size:cover;
+    background-image: url(../imgs/instagram.jpg);
+    margin-bottom: -70px;
+}
+
+.instagramUs {
+    width: 600px;
+    font-family: "Gill Sans";
+    line-height: normal;
+    text-align: center;
+    position: relative;
+    top: 300px;
+    right: -850px;
+}
+
+.instagramUs h4{
+    font-size: 6em;;
+    color: white;
+}
+
+.instagramUs p{
+    font-size: 30px;
+    color: #452E13;
+    
+}
+
+.hashtag {
+    color: #452E13;
+    font-size: 40px;
+}
+
+/*----------------------------------HOMEPAGE FOOTER SECTION--------------------------------*/
+
+.copy {
+    font-family: Verdana, sans-serif;
+    font-size: 13px;
+    color: lightgrey;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------VEGETARIAN PAGES STYLESHEET------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------*/
+
+.bgRecipes {
+    background-image: url(../imgs/backgroundrecipes.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 1400px; 
+    
+}
+
+/*--------------------------------VEGETARIAN HEAD SECTION----------------------------------*/
+
+.frammeTop {
+    background-color: rgb(113, 149, 69);
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+}
+
+.topLogoVeg {
+    width: 120px;
+    position: relative;
+    top: 5px;
+    left: 120px;
+    z-index: 10;
+}
+
+.menuVeg {
+    width: 100%;
+    position: absolute;
+    top: 20px;
+}
+
+
+.menuVeg ul{
+    width: 55%;
+    padding-left: 70px;
+    padding-right: 70px;
+    display: flex;
+    margin:auto;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menuVeg li {
+    border-right: 1px white solid;
+}
+
+.menuVeg li:last-child {
+    border-right: none; 
+}
+
+.menuVeg ul a {
+    width: 100%;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: monospace;
+    margin-left: 10px;
+    margin-right: 14px;
+    padding: 10px;
+    display: block;
+}
+
+.menuVeg a:link{
+    text-decoration: none;
+}
+
+.menuVeg a:hover {
+    font-weight: bold;
+}
+
+.menuVeg a:active {
+    color: lightgrey;
+}
+
+/*------------------------------VEGETARIAN MAIN SECTION-----------------------------------------------*/
+
+.veggieWrapper {
+    width: 980px;
+    max-height:888px;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.veggieWrapper h1 {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 3em;
+    font-family: "Helvetica Neue";
+    color: white;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 8px #7c7b79;
+}
+
+.rowFrammes {
+    width: 930px;
+    display: flex;
+    margin: 30px auto;
+    justify-content: space-between;
+}
+
+.frammeLeft {
+    width: 40%;
+    height: auto;
+    background-color: #719545;
+    display: block;
+    opacity: 0.8;
+    border-radius: 9px; 
+}
+
+.title h2 {
+    font-family: "Gill Sans";
+    line-height: 1.0;
+    font-size: 20px;
+    color: white;
+    border-bottom: white solid 1px;
+    padding: 10px;
+}
+
+.frammeLeft li {
+    margin-left: 30px;
+    color: white;
+}
+
+.frammeLeft p {
+    font-family: "Gill Sans";
+    font-size: 18px;
+    color: white;
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.frammeBottom {
+    margin-left: 25px;
+    width: 95%;
+    height: auto;
+    background-color: #719545;
+    display: block;
+    opacity: 0.8;
+    border-radius: 9px;
+}
+
+.instructionsList li {
+    font-family: "Gill Sans";
+    color: white;
+    margin-left: 30px;
+    line-height: 1.5;
+}
+
+.instructionsList p {
+    font-family: "Gill Sans";
+    line-height: 1.1;
+    font-size: 18px;
+    color: white;
+    margin-left: 30px;
+    margin-top: 5px;
+    width: 850px;
+    text-align: justify;
+}
+
+.frammeRight {
+    background-size: cover;
+    border: 1px solid #BBB5AC;
+    width: 525px;
+    height: auto;
+    background-color: black;
+    display: block;
+    border-radius: 9px;
+}
+
+#photo1 {
+    background-image: url(../imgs/vegrec1.jpg);
+}
+
+#photo2 {
+    background-image: url(../imgs/vegrec2.jpg);
+}
+
+#photo3 {
+    background-image: url(../imgs/vegrec3.jpg);
+}
+
+/*----------------------------------VEGETARIAN FOOTER SECTION---------------------------------*/
+
+.instaVeg {
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+    font-family: abugetregular;
+    font-size: 4em;
+    color: dimgray;
+}
+
+.instaVeg:link {
+    text-decoration: none;
+}
+
+.instaVeg:hover {
+     color: white;
+}
+
+.instaVeg:active {
+    color: lightgrey;
+}
