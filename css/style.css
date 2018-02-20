@@ -504,18 +504,6 @@ body .bgImage {
     border-radius: 9px;
 }
 
-#photo1 {
-    background-image: url(../imgs/vegrec1.jpg);
-}
-
-#photo2 {
-    background-image: url(../imgs/vegrec2.jpg);
-}
-
-#photo3 {
-    background-image: url(../imgs/vegrec3.jpg);
-}
-
 /*----------------------------------VEGETARIAN FOOTER SECTION---------------------------------*/
 
 .instaVeg {
