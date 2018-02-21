@@ -32,16 +32,11 @@ html, body {width:100%; height: 100%;}
 --------------------------------------------------------HOMEPAGE STYLESHEET----------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------*/
-body .bgImage {
+#homepage {
     overflow-x: hidden;
-}
-
-.bgImage {
     background-image: url(../imgs/tools.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 935px;
-    margin-top: -120px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 
 /*-------------------------------HOMEPAGE HEAD SECTION----------------------------------*/
@@ -49,8 +44,7 @@ body .bgImage {
 .firstFramme {
     background-color: #7886A1;
     width: 100%;
-    height: 90px;
-    padding-top: 120px;   
+    height: 90px;   
 }
 
 .contentFramme {
@@ -94,6 +88,7 @@ body .bgImage {
     width: 100%;
     top: 0;
     z-index: 20;
+    margin-top: 730px;
 }
 
 .menu ul{
@@ -145,7 +140,7 @@ body .bgImage {
 .homeButton {
     position: sticky;
     top: 150px;
-    margin-top: 300px;
+    margin-top: 150px;
     float: right;
     display: block;
     background-color: dimgrey;
@@ -325,7 +320,7 @@ body .bgImage {
 -------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------*/
 
-.bgRecipes {
+#bgRecipes {
     background-image: url(../imgs/backgroundrecipes.jpeg);
     background-size: cover;
     background-position: center;
