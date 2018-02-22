@@ -32,7 +32,7 @@ html, body {width:100%; height: 100%;}
 --------------------------------------------------------HOMEPAGE STYLESHEET----------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------*/
-#homepage {
+.homepage {
     overflow-x: hidden;
     background-image: url(../imgs/tools.jpg);
     background-repeat: no-repeat;
@@ -244,48 +244,50 @@ html, body {width:100%; height: 100%;}
     color: lightgrey;
 }
 
-#vegetarian { 
+.vegetarian { 
     background-color: #D8E3A0;
 }
 
-#meat {
+.meat {
     background-color: #E7D7CE;
 }
 
-#fish {
+.fish {
     background-color: #CFE0ED;
 }
 
-#seafood {
+.seafood {
     background-color: #DBD8D7;
 }
 
-#breakfast {
+.breakfast {
     background-color: #E8BC48;
 }
 
-#dessert {
+.dessert {
     background-color: #EFB57C;
 }
 
 /*--------------------------------HOMEPAGE INSTAGRAM US---------------------------------------*/
 
-#instaPage {
+.instagramUs {
     width: 100%;
     height: 865px;
+    margin-bottom: -70px;
     background-size:cover;
     background-image: url(../imgs/instagram.jpg);
-    margin-bottom: -70px;
-}
-
-.instagramUs {
-    width: 600px;
     font-family: "Gill Sans";
     line-height: normal;
     text-align: center;
+    color: #452E13;
+}
+
+.contentInstagram {
+    width: 600px;
     position: relative;
     top: 300px;
     right: -850px;
+
 }
 
 .instagramUs h4{
@@ -295,12 +297,9 @@ html, body {width:100%; height: 100%;}
 
 .instagramUs p{
     font-size: 30px;
-    color: #452E13;
-    
 }
 
 .hashtag {
-    color: #452E13;
     font-size: 40px;
 }
 
@@ -320,7 +319,7 @@ html, body {width:100%; height: 100%;}
 -------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------*/
 
-#bgRecipes {
+.bgRecipes {
     background-image: url(../imgs/backgroundrecipes.jpeg);
     background-size: cover;
     background-position: center;
